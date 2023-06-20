@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça seu pedido! </title>
+</head>
+<body>
+    <form method="get">
+        <br><br>
+        <hr><br>
+        <h2>Faça já seu pedido - Lanches em Alta</h2>
+        <p><u>Preencha o cadastro e logo abaixo faça seu pedido! </u></p>
+        <br><hr><br>
+        
+        
+        <h3>Dados Pessoais (Cadastro): </h3>
+
+        <label>Digite seu nome: *</label><br>
+        <input type="text" name="name" id="name-client"><br>
+
+        <br>
+        <label>Digite sua idade: *</label><br>
+        <input type="number" name="age" id="age-client"><br>
+
+        <br>
+        <label>Data de Aniversário: *</label><br>
+        <input type="date" name="niver" id="niver-client" title="Mês/Dia/Ano"><br>
+        
+        <br>
+        <label>Digite seu e-mail de contato: *</label><br>
+        <input type="email" name="email" id="email-client"><br>
+
+        <br>
+        <label>Digite seu endereço: *</label><br>
+        <input type="text" name="locate" id="locate-client"><br>
+
+        <br>
+        <label>Código de Indicação:</label><br>
+        <input type="text" name="code" id="code-client"><br>
+
+        
+        <br><br><hr><br>
+
+        <h3>Faça seu pedido (Lanche): </h3>
+
+        <label>Tipo de Lanche:  * </label><br>
+        <select name="menu-opcoes" id="menu-opcoes">
+            <option value="selected" selected>Selecione uma opção. </option>
+            <option value="pizza">Pizza</option>
+            <option value="esfirra">Esfirra</option>
+        </select><br>
+
+        <br>
+
+        <label>Quantidade : * </label><br>
+            <input type="number" name="quantidade-lanche" id="quantidade-lanche" min="1" max="12"><br>
+
+        <br>
+
+        <label>Sabor: * </label><br>
+            <input type="checkbox" name="frango-catupiry" id="frango-catupiry"> Frango com Catupiry <br>
+            <input type="checkbox" name="calabresa" id="calabresa"> Calabresa <br>
+            <input type="checkbox" name="queijo" id="queijo"> Quatro queijos <br>
+            <input type="checkbox" name="portuguesa" id="portuguesa"> Portuguesa <br>
+
+        <br>
+        <label title="Caso seja pizza">Qual seria o tamanho ? *</label><br>
+            <input type="radio" name="tamanho" id="small"> Pequena <br>
+            <input type="radio" name="tamanho" id="medium"> Normal <br>
+            <input type="radio" name="tamanho" id="family" title="Grande"> Familia <br>
+            <input type="radio" name="tamanho" id="extra-large"> Extra Grande<br>
+
+        <br>
+        <label title="Bebida">Qual seria o acompanhamento ? *</label><br>
+            <input type="radio" name="acompanhamento" id="nule"> Nenhum <br>
+            <input type="radio" name="acompanhamento" id="juice"> Suco natural <br>
+            <input type="radio" name="acompanhamento" id="soda"> Refrigerante <br>
+            <input type="radio" name="acompanhamento" id="energy"> Energético <br>
+            <input type="radio" name="acompanhamento" id="outro"> Outro <br>
+
+        <br>
+        <label>Deixe sua preferência abaixo: </label><br>
+        <textarea name="preference" id="preference" cols="35" rows="2"></textarea><br>
+
+
+
+        <br><br>
+        <hr>
+
+        <br><label> Confira se o pedido está correto e se preencheu todos campos indicados!</label><br>
+
+        <br>
+        <input type="reset" value=" Limpar " title="Aperte para resetar seu cadastro e carrinho">
+        <input type="button" value=" Adicionar no carrinho" title="Aperte para adicionar em uma futura compra!">
+        <input type="submit" value=" Finalizar pedido " title="Aperte para solicitar seu pedido! ">
+        <br><br><br>
+        <hr>
+        <br><br>
+    </form>
+</body>
+</html>
